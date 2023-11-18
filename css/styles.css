@@ -1,0 +1,220 @@
+/* Colours */
+
+:root {
+    --primary-color: #662d91;
+    --secondary-color:#ffff ;
+    --third-color: #ec008c;
+    --fourth-color: #ccc;
+    --program-color: gray;
+    --program-A: #16A085;
+    --program-B: #389aff;
+    --program-C: #bf2431;
+
+  }
+
+
+  #map-title {
+    color: var(--third-color);
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+      text-transform: uppercase;
+}
+
+#map-title span {
+  display: inline-block;
+  margin: 0 5px; 
+}
+
+/* Style for  filter menu */
+#filter {
+  background-color: #f1f1f1;
+  padding: 15px;
+  border-radius: 5px;
+
+}
+
+/* Filter  labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+  color:var(--primary-color)!important;
+  font-weight: bold;
+
+
+}
+
+/* Filter select */
+.form-control {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+ background-color: var(--fourth-color);
+ color:var(--primary-color);
+ border: 1px solid var(--fourth-color);
+
+
+}   
+
+
+/* Filter button */
+.btn {
+  background-color: var(--primary-color)!important;
+  color: var(--secondary-color)!important;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 15px;
+  margin-top: 3px;
+
+
+}
+
+
+  
+  /* Style for markers with school locations */
+
+.marker-icon.program-A {
+    color: var(--program-A);
+}
+
+.marker-icon.program-B {
+    color: var(--program-B);
+}
+
+.marker-icon.program-C {
+    color: var(--program-C);
+}
+
+
+/* popup  */
+.leaflet-popup-content{
+    color: var(--secondary-color);
+    font-size: 12px;
+    text-align: center;
+    padding: 5px;
+    line-height: 1.7; 
+
+}
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip{
+    background: #2C3E50; 
+    border-radius: 5px;
+   
+    
+}
+
+
+
+
+/* Program Status Country Layer */
+.live {
+  fill: var(--third-color);
+  stroke: none;
+  fill-opacity: 0.7; 
+  
+}
+
+.development {
+  fill: var(--primary-color);
+  stroke: none;
+  fill-opacity: 0.7; 
+}
+
+.null {
+  fill: var(--program-color);
+  stroke: none;
+  fill-opacity: 0.1; 
+}
+
+
+
+/* legend program type */
+
+.center {
+    text-align: center;
+}
+
+#legend {
+    margin: 10px auto; /
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.legend-item {
+    display: inline-block;
+    margin: 10px;
+}
+
+.legend-color {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+
+
+
+/* legend  program status */
+#border-legend {
+  background-color: var(--secondary-color);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#border-legend div {
+  margin: 5px 0;
+}
+
+
+.legend-live {
+  width: 16px;
+  height: 16px;
+  background-color: var(--third-color);
+  fill-opacity: 0.7; 
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.legend-development {
+  width: 16px;
+  height: 16px;
+  background-color: var(--primary-color);
+  fill-opacity: 0.7; 
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.legend-null {
+  width: 16px;
+  height: 16px;
+  background-color: var(--program-color);
+  fill-opacity: 0.1; 
+  display: inline-block;
+  margin-right: 5px;
+}
+
+
+
+
+/* span element */
+#country_count {
+  color: var(--primary-color) ;
+}
+
+/* span element */
+#school_count {
+  color: var(--primary-color) ;
+
+}
+

@@ -4,7 +4,7 @@
 var markers = [];
 
 function loadSchoolData() {
-    $.get('https://github.com/CharlotteGIS/learningpassport/blob/main/data/schools.csv', function(data) {
+    $.get('data/schools.csv', function(data) {
         Papa.parse(data, {
             header: true,
             dynamicTyping: true,

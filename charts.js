@@ -5,7 +5,7 @@ google.charts.setOnLoadCallback(drawChart);
 
 function drawChart() {
   var query = new google.visualization.Query(
-    'https://docs.google.com/spreadsheets/d/1kUJ7qUf_5MkijECQ1A0il6JUNvnoJ17OJXLjbIuJ4yg/gviz/tq?range=B2:I34'
+    'https://docs.google.com/spreadsheets/d/1kUJ7qUf_5MkijECQ1A0il6JUNvnoJ17OJXLjbIuJ4yg/gviz/tq?range=A2:I34'
   );
 
   query.send(handleQueryResponse);
@@ -23,8 +23,8 @@ function handleQueryResponse(response) {
   var view = new google.visualization.DataView(data);
   var groupedData = google.visualization.data.group(
     view,
-    [7], // Column index for the region column
-    [{'column': 1, 'aggregation': google.visualization.data.count, 'label': 'Number of Schools','type': 'number'}]
+    [6], // Column index for the region column
+    [{'column': 0, 'aggregation': google.visualization.data.count, 'label': 'Number of Schools','type': 'number'}]
   );
 
   var options = {
